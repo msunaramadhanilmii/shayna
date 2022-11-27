@@ -1,6 +1,6 @@
 <template>
     <!-- Instagram Section Begin -->
-    <div class="instagram-photo">
+    <div class="instagram-photo" :autoplay="true">
         <div class="insta-item set-bg" style="background-image: url('/img/insta-1.jpg')">
             <div class="inside-text">
                 <i class="ti-instagram"></i>
