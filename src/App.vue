@@ -1,32 +1,34 @@
 <template>
-  <div id="app">
-    <!-- <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav> -->
-    <router-view/>
+  <div class="home">
+    <HeaderShayna />
+    <HeroShayna />
+    <WomanShayna />
+    <InstaShayna />
+    <PartnerShayna />
+    <FooterShayna />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// @ is an alias to /src
+// import HelloWorld from '@/components/HelloWorld.vue'
+// import carousel from 'vue-owl-carousel'
+import HeaderShayna from '@/components/HeaderShayna.vue'
+import HeroShayna from '@/components/HeroShayna.vue'
+import WomanShayna from '@/components/WomanShayna.vue'
+import InstaShayna from '@/components/InstaShayna.vue'
+import PartnerShayna from '@/components/PartnerShayna.vue'
+import FooterShayna from '@/components/FooterShayna.vue'
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+  name: 'HomeView',
+  components: {
+    HeaderShayna,
+    WomanShayna,
+    HeroShayna,
+    InstaShayna,
+    PartnerShayna,
+    FooterShayna
+  }
+};
+</script>

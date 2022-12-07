@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import {
+  createWebHistory,
+  createRouter
+} from "vue-router";
 import HomeView from '../views/HomeView.vue'
 import ProductView from '../views/ProductView.vue'
 import ShoppingCartView from '../views/ShoppingCartView.vue'
 import SuccessView from '../views/SuccessView.vue'
-
-Vue.use(VueRouter)
 
 const routes = [
   {
@@ -39,7 +39,8 @@ const routes = [
   },
 ]
 
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHistory(),
   routes
 })
 
