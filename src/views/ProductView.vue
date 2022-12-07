@@ -123,7 +123,7 @@ export default {
             }
         }
         axios
-            .get("http://shayna-backend.belajarkoding.com/api/products", {
+            .get("http://shayna-backend.test/api/products", {
                 params: {
                     id: this.$route.params.id
                 }
